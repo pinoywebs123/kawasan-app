@@ -1,0 +1,92 @@
+
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Tourist Spot</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+    <div>
+        <ion-segment [(ngModel)]="pet">
+          <ion-segment-button value="info">
+            Information
+          </ion-segment-button>
+          <ion-segment-button value="map">
+            Map
+            <div id="map"></div>
+          </ion-segment-button>
+          <ion-segment-button value="contact">
+              Contact
+            </ion-segment-button>
+        </ion-segment>
+      </div>
+      
+      <div [ngSwitch]="pet">
+        <ion-list *ngSwitchCase="'info'">
+            <ion-card>
+              <ion-card-header>
+                <p text-center>Kawasan Falls and Canyoneering</p>
+              </ion-card-header>
+              <ion-card-content>
+                <ion-item-group>
+                  <ion-item-divider color="light">Price Rate & Inclusion</ion-item-divider>
+                  <ion-item>1500 PHP/Pax</ion-item>
+                  <ion-item>lifevest</ion-item>
+                  <ion-item>safety Helmet</ion-item>
+                  <ion-item>all government fee</ion-item>
+                  <ion-item>aqua shoes</ion-item>
+                  <ion-item>ride to jump station</ion-item>
+                  <ion-item>tour guide fees</ion-item>
+                  <ion-item>lite snacks</ion-item>
+                  <ion-item>bamboo rafting at kawasan falls</ion-item>
+                  <ion-item>recovery meals(lunch)</ion-item>
+                  <ion-item>free use of showers and comform rooms</ion-item>
+                </ion-item-group>
+              </ion-card-content>
+            </ion-card>
+        </ion-list>
+      
+        <ion-list *ngSwitchCase="'map'">
+            <h2 text-center>Map </h2>
+        </ion-list>
+
+        <ion-list *ngSwitchCase="'contact'">
+          <ion-card>
+            <ion-card-header>
+              Explore Nearby
+            </ion-card-header>
+          
+            <ion-list>
+              <button ion-item>
+                <ion-icon name="md-tablet-portrait" item-start></ion-icon>
+                +6305 33 2623
+              </button>
+          
+              <button ion-item>
+                <ion-icon name="md-tablet-portrait" item-start></ion-icon>
+                +63918 654 4111
+              </button>
+          
+              <button ion-item>
+                <ion-icon name="logo-facebook" item-start></ion-icon>
+                <a href="https://www.facebook.com/kawasancayoneering">https://www.facebook.com/kawasancayoneering</a>
+              </button>
+
+              <button ion-item>
+                <ion-icon name="logo-instagram" item-start></ion-icon>
+               <a href="https://www.instagram.com/kawasancanyoneering/">https://www.instagram.com/kawasancanyoneering/</a>
+              </button>
+          
+              
+          
+            </ion-list>
+          </ion-card>
+          </ion-list>
+      </div>
+
+
+</ion-content>

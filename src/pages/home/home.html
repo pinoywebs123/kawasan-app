@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Cebu South Beauty</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-item>
+        <ion-input type="text" placeholder="Search Tourist Spot"></ion-input>
+      </ion-item>
+    
+      
+  <ion-card>
+    <img src="image/1.jpg"/>
+    <ion-card-content>
+      <ion-card-title text-center>
+        Kawasan Falls and Canyoneering
+        </ion-card-title>
+      
+    </ion-card-content>
+
+    <ion-row no-padding>
+      <ion-col>
+        <button ion-button clear small color="secondary" icon-start (click)="clickTour('info')">
+          <ion-icon name='md-paper-plane'></ion-icon>
+          View
+        </button>
+      </ion-col>
+      <ion-col text-center>
+        <button ion-button clear small color="danger" icon-start (click)="clickTour('map')">
+          <ion-icon name='md-pin'></ion-icon>
+          Map
+        </button>
+      </ion-col>
+      <ion-col text-right>
+        <button ion-button clear small color="secondary" icon-start (click)="clickTour('contact')">
+          <ion-icon name='ios-phone-portrait-outline'></ion-icon>
+          Contact
+        </button>
+      </ion-col>
+    </ion-row>
+
+  </ion-card>
+
+  
+
+</ion-content>

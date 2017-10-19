@@ -1,0 +1,8 @@
+{
+  "name": "cebusouthbeauty",
+  "app_id": "c7a3d80d",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
